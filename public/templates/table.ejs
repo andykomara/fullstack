@@ -1,0 +1,23 @@
+<html>
+    <head>
+     <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>City</th>
+            </thead>
+            <%
+            for(let X in data){
+              %>  
+              <tr>
+                  <td><%=data[X].sno%></td>
+                  <td><%=data[X].name%></td>
+                  <td><%=data[X].city%></td>
+              </tr>
+           <%}%>
+        </table>
+    </body>
+</html>
